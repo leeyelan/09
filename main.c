@@ -3,22 +3,23 @@
 #define SIZE 5
 
 int main(void){
-	int i, average;
-	int sum;
+	int i;
 	int grade[SIZE];
+	int score[SIZE];
 	
-	sum = 0;
 	for(i=0; i<SIZE; i++)
 	{
-		printf("input student's grade: ");
-		scanf("%d",&grade[i]);
-		sum +=grade[i]; 
+	grade[i] = rand()%100;
 	}
 
-average = sum/SIZE;
-printf("average of grade : %d\n", average);
-return 0;
+    for(i=0; i<SIZE; i++)
+    
+    score[i] = grade[i];
+    
+    for(i=0; i<SIZE; i++)
+    printf("score[%d] = %i (%i)\n",i,score[i],grade[i]);
+    
+    
 
- 	
- 	return 0;
+     return 0;
 }
